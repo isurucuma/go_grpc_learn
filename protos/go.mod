@@ -1,4 +1,4 @@
-module github.com/isurucuma/go_grpc_sample/protos
+module github.com/isurucuma/go_grpc_learn/protos
 
 go 1.23.2
 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package coffee_shop;
 
-option go_package = "github.com/isurucuma/go_grpc_sample/protos/gen";
+option go_package = "github.com/isurucuma/go_grpc_learn/protos/gen";
 
 service CoffeeShop {
   rpc GetMenu(GetMenuRequest) returns (stream Menu) {}
