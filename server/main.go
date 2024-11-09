@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/isurucuma/go_grpc_coffeeshop/compiled"
+	"github.com/isurucuma/go_grpc_learn/protos/gen"
 	"google.golang.org/grpc"
 	"log"
 	"net"
@@ -15,7 +15,7 @@ func main() {
 
 	grpcServer := grpc.NewServer()
 
-	protos.RegisterCoffeeShopServer(grpcServer, &server{})
+	gen.RegisterCoffeeShopServer(grpcServer, &server{})
 
 	if err := grpcServer.Serve(lis); err != nil {
 		log.Fatalf("failed to serve: %v", err)

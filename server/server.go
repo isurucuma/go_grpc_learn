@@ -2,15 +2,15 @@ package main
 
 import (
 	"context"
-	protos2 "github.com/isurucuma/go_grpc_coffeeshop/gen"
+	"github.com/isurucuma/go_grpc_learn/protos/gen"
 )
 
 type server struct {
-	protos2.UnimplementedCoffeeShopServer
+	gen.UnimplementedCoffeeShopServer
 }
 
-func (s *server) GetMenu(request *protos2.GetMenuRequest, stream protos2.CoffeeShop_GetMenuServer) error {
-	items := []*protos2.Item{
+func (s *server) GetMenu(request *gen.GetMenuRequest, stream gen.CoffeeShop_GetMenuServer) error {
+	items := []*gen.Item{
 		{
 			Id:    "1",
 			Name:  "Espresso",
@@ -29,7 +29,7 @@ func (s *server) GetMenu(request *protos2.GetMenuRequest, stream protos2.CoffeeS
 	}
 
 	for i, _ := range items {
-		err := stream.Send(&protos2.Menu{
+		err := stream.Send(&gen.Menu{
 			Items: items[0 : i+1],
 		})
 		if err != nil {
@@ -40,10 +40,10 @@ func (s *server) GetMenu(request *protos2.GetMenuRequest, stream protos2.CoffeeS
 	return nil
 }
 
-func (s *server) PlaceOrder(ctx context.Context, request *protos2.OrderRequest) (*protos2.Receipt, error) {
-	return &protos2.Receipt{Id: "123"}, nil
+func (s *server) PlaceOrder(ctx context.Context, request *gen.OrderRequest) (*gen.Receipt, error) {
+	return &gen.Receipt{Id: "123"}, nil
 }
 
-func (s *server) GetOrderStatus(ctx context.Context, request *protos2.Receipt) (*protos2.OrderStatus, error) {
-	return &protos2.OrderStatus{Status: "PREPARING"}, nil
+func (s *server) GetOrderStatus(ctx context.Context, request *gen.Receipt) (*gen.OrderStatus, error) {
+	return &gen.OrderStatus{Status: "PREPARING"}, nil
 }
