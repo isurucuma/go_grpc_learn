@@ -2,8 +2,8 @@ github.com/golang/protobuf v1.5.4 h1:i7eJL8qZTpSEXOPTxNKhASYpMn+8e5Q6AdndVa1dWek
 github.com/golang/protobuf v1.5.4/go.mod h1:lnTiLA8Wa4RWRcIUkrtSVa5nRhsEGBg48fD6rSs7xps=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/isurucuma/go_grpc_learn/protos v0.0.0-20241109125932-0d913b3aed8e h1:Azap+jvwoIswDPRdMdwUMM8j06n+I6N7WwfxIlSTDFU=
-github.com/isurucuma/go_grpc_learn/protos v0.0.0-20241109125932-0d913b3aed8e/go.mod h1:cbxu4d3dE1TOMzBZMgSMnfPXoIuye6MyuTcTRrSNtRA=
+github.com/isurucuma/go_grpc_learn/protos v0.0.0-20241109132910-3e8d415549f8 h1:s2okduNZ8elazobAjXC9vsZqkCICD02PjyTDqSh4yLY=
+github.com/isurucuma/go_grpc_learn/protos v0.0.0-20241109132910-3e8d415549f8/go.mod h1:cbxu4d3dE1TOMzBZMgSMnfPXoIuye6MyuTcTRrSNtRA=
 golang.org/x/net v0.29.0 h1:5ORfpBpCs4HzDYoodCDBbwHzdR5UrLBZ3sOnUJmFoHo=
 golang.org/x/net v0.29.0/go.mod h1:gLkgy8jTGERgjzMic6DS9+SP0ajcu6Xu3Orq/SpETg0=
 golang.org/x/sys v0.25.0 h1:r+8e+loiHxRqhXVl6ML1nO3l1+oFoWbnlu2Ehimmi34=
